@@ -14,13 +14,13 @@ const countOnly = function(allItems, itemsToCount) {
       countTally[objectEntry] = null;
       allItems.forEach(name => {
         if (name === objectEntry) {
-        countTally[objectEntry] += 1
-        }  
+          countTally[objectEntry] += 1;
+        }
       });
     }
   }
-  return countTally; 
-}
+  return countTally;
+};
 
 const printObject = function(objectInput) {
   let message = '';
@@ -30,10 +30,10 @@ const printObject = function(objectInput) {
     message += `Key: ${key}, Value: ${value}\n`;
   }
   return message;
-}
+};
 
 
-// Tests: 
+// Tests:
 const firstNames = [
   "Karl",
   "Salima",
