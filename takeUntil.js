@@ -15,15 +15,12 @@ const eqArrays = function(arr1, arr2) {
 // ---------------------------------------------------------------------
 
 const takeUntil = function(array, callbackFunction) {
-  let newArray = [];
-  for (let item of array) {
-    if (callbackFunction(item)) {
-      break;
+  for (const index in array) {
+    if (callbackFunction(array[index])) {
+      return array.slice(0, index);
     }
-    newArray.push(item);
   }
-  return newArray;
-}
+};
 
 // Input:
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
