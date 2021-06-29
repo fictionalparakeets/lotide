@@ -1,6 +1,7 @@
 const _ = require('../index.js');
 
-// Tests:
+
+    // Tests:
 _.assertArraysEqual(_.without([1, 2, 3], [1]), [2, 3]);
 _.assertArraysEqual(_.without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
 
