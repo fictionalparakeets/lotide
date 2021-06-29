@@ -22,5 +22,4 @@ const printObject = function(objectInput) {
   return message;
 };
 
-// Tests:
-console.log(letterPositions("lighthouse in the house"));
+module.exports = letterPositions;
